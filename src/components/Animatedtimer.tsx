@@ -80,13 +80,13 @@ export default function AnimatedTimer() {
   }, []);
   const [open, setOpen] = useState(true);
   return (
-    <div className="h-screen relative">
+    <div className="w-full h-screen relative">
       <Image
         alt="casa"
         src="/LP-Desktop.jpg"
         width={2000}
         height={2000}
-        className="absolute object-cover hidden md:block z-0"
+        className="absolute object-cover h-screen w-screen hidden md:block z-0"
       />
       <Image
         alt="casa"
@@ -146,7 +146,7 @@ export default function AnimatedTimer() {
           <CountdownItem num={timerSeconds} text="Secondes" />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 pt-48 xl:pt-10 2xl:pt-32">
+      <div className="absolute w-full lg:bottom-5 z-50 grid grid-cols-1 md:grid-cols-3 pt-48 xl:pt-10 2xl:pt-32">
         <div className="hidden  pt-0 lg:pt-14 2xl:pt-32  z-10 md:flex justify-center items-center text-xs text-white">
           CASABLANCA BEER © TOUS DROITS RÉSERVÉS
         </div>

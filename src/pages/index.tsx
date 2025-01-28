@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="description" content="READY TO REINVENT YOUR SPIRIT ?" />
-        <link rel="icon" href="/casawhite.png" />
+        <link rel="icon" href="/Casablanca.png" />
         <title>Casablanca Beer</title>
         <meta property="og:image" content="/logo-jeep-black.png" />
       </Head>
