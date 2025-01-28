@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bebas";
+  src: url("/Fonts/Bebas-Regular.otf") format("OpenType");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "bebas";
+}
