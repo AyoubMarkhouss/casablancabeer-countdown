@@ -8,9 +8,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "gotham";
+  src: url("/Fonts/Gotham-Book.otf") format("OpenType");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   font-family: "bebas";
 }
+.goth{
+  font-family: "gotham";
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

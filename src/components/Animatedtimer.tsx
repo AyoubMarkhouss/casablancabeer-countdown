@@ -25,7 +25,7 @@ export default function AnimatedTimer() {
   const interval = useRef<NodeJS.Timeout | null>(null);
 
   const startTimer = () => {
-    const countdownDate = new Date("June 21, 2025 00:18:00").getTime();
+    const countdownDate = new Date("June 12, 2025 00:19:00").getTime();
     interval.current = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;

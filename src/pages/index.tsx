@@ -49,19 +49,18 @@ export default function Home() {
           <AnimatedTimer />
           <div className="flex z-50 items-center justify-center py-10 md:py-20">
             <div className="px-5 sm:max-w-6xl flex flex-col text-white items-center text-center text-2xl gap-5">
-             
-              <p>
+              <p className="goth">
                 Là où les lignes du design s&apos;entrelacent avec les
                 battements de la musique, où le style devient manifeste, où la
                 gastronomie raconte une histoire, et où la mixologie sublime
                 chaque instant.
               </p>
-              <p>
+              <p className="goth">
                 Cette année, Casablanca Beer t&apos;invite à célébrer l&apos;art
                 de la réinvention, dans un univers où chaque détail est une
                 promesse, chaque gorgée, une déclaration.
               </p>
-              <p>Le compte à rebours est lancé.</p>
+              <p className="goth">Le compte à rebours est lancé.</p>
             </div>
           </div>
           {/* <div className="md:px-40 pt-5 pb-14">
