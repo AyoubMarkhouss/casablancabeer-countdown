@@ -80,14 +80,14 @@ export default function AnimatedTimer() {
   }, []);
   const [open, setOpen] = useState(true);
   return (
-    <div className="w-full h-full lg:h-[80vh] relative">
-      <Image
+    <div className="w-full h-full lg:h-full  relative ">
+      {/* <Image
         alt="casa"
         src="/LP-Desktop.jpg"
         width={2000}
         height={2000}
-        className="absolute object-cover h-[80vh] w-screen  md:block z-0"
-      />
+        className="absolute object-cover h-full w-screen  md:block z-0"
+      /> */}
       {/* <Image
         alt="casa"
         src="/LP-Mobile.jpg"
@@ -96,15 +96,15 @@ export default function AnimatedTimer() {
         className="absolute block md:hidden z-0"
       /> */}
       <div className="z-50 flex flex-col justify-center items-center">
-        <Image
+        {/* <Image
           alt="ee"
           src="/casawhite.png"
           width={2000}
           height={2000}
           className="w-40 md:w-40 lg:w-56 z-50"
-        />
-        <div className="flex flex-col max-w-[90%] md:w-full justify-center items-center xl:pt-0 2xl:pt-32 lg:pb-9">
-          <h1 className="font-bold z-50 pb-4 text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+        /> */}
+        <div className="flex flex-col max-w-[90%] md:w-full justify-center items-center pt-10 md:pt-20 2xl:pt-32 lg:pb-9">
+          <h1 className="font-bold z-50 pb-4 text-4xl md:text-6xl text-center text-slate-100">
             READY TO REINVENT YOUR SPIRIT ?
           </h1>
           <div className="z-50">
@@ -195,13 +195,13 @@ const CountdownItem = ({ num, text }: { num: string; text: string }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-2xl md:text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 font-medium"
+            className="block text-5xl md:text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 font-medium"
           >
             {num}
           </motion.span>
         </AnimatePresence>
       </div>
-      <span className="text-xs md:text-sm lg:text-base font-light text-gray-300">
+      <span className="text-md md:text-sm lg:text-base font-light text-gray-300">
         {text}
       </span>
     </div>

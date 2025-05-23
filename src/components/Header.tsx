@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 const Header = () => {
   return (
-    <div className="flex justify-center items-center h-20 bg-black">
+    <div className="flex justify-center items-center h-32 bg-[#a80017]">
       <Image
         alt="logo"
-        src="/logo-jeep.png"
+        src="/casawhite.png"
         height={1500}
         width={1500}
-        className="w-20"
+        className="w-40"
       />
     </div>
   );

@@ -54,11 +54,11 @@ const items = [
     title: "Mixology",
   },
   {
-    image: "/fashion.jpg",
+    image: "/Fashion2.webp",
     title: "Fashion",
   },
   {
-    image: "/music.jpg",
+    image: "/Music2.webp",
     title: "Music",
   },
   {
@@ -66,7 +66,7 @@ const items = [
     title: "Design",
   },
   {
-    image: "/food.jpg",
+    image: "/Food2.webp",
     title: "Food",
   },
 ];
@@ -121,7 +121,7 @@ export default function Expandable({
         {list.map((item) => (
           <div
             key={item.title}
-            className="relative w-full h-20 rounded-md overflow-hidden"
+            className="relative w-full h-32 rounded-md overflow-hidden"
           >
             <img
               src={item.image}
