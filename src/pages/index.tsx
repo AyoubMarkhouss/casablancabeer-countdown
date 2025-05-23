@@ -48,7 +48,7 @@ export default function Home() {
           />
           <AnimatedTimer />
           <div className="flex z-50 items-center justify-center py-10 md:py-20">
-            <div className="px-5 sm:max-w-6xl flex flex-col text-white items-center text-center text-2xl gap-5">
+            <div className="px-5 sm:max-w-6xl flex flex-col text-white items-center text-center text-md sm:text-2xl gap-5">
               <p className="goth">
                 Là où les lignes du design s&apos;entrelacent avec les
                 battements de la musique, où le style devient manifeste, où la
