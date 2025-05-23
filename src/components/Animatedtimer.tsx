@@ -80,30 +80,30 @@ export default function AnimatedTimer() {
   }, []);
   const [open, setOpen] = useState(true);
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full h-full lg:h-[80vh] relative">
       <Image
         alt="casa"
         src="/LP-Desktop.jpg"
         width={2000}
         height={2000}
-        className="absolute object-cover h-screen w-screen hidden md:block z-0"
+        className="absolute object-cover h-[80vh] w-screen  md:block z-0"
       />
-      <Image
+      {/* <Image
         alt="casa"
         src="/LP-Mobile.jpg"
         width={2000}
         height={2000}
         className="absolute block md:hidden z-0"
-      />
+      /> */}
       <div className="z-50 flex flex-col justify-center items-center">
         <Image
           alt="ee"
           src="/casawhite.png"
           width={2000}
           height={2000}
-          className="w-56 z-50"
+          className="w-40 md:w-40 lg:w-56 z-50"
         />
-        <div className="flex flex-col max-w-[90%] md:w-full justify-center items-center xl:pt-10 2xl:pt-32 pb-12">
+        <div className="flex flex-col max-w-[90%] md:w-full justify-center items-center xl:pt-0 2xl:pt-32 lg:pb-9">
           <h1 className="font-bold z-50 pb-4 text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             READY TO REINVENT YOUR SPIRIT ?
           </h1>
@@ -146,7 +146,7 @@ export default function AnimatedTimer() {
           <CountdownItem num={timerSeconds} text="Secondes" />
         </div>
       </div>
-      <div className="absolute w-full lg:bottom-5 z-50 grid grid-cols-1 md:grid-cols-3 pt-48 xl:pt-10 2xl:pt-32">
+      {/* <div className="absolute w-full lg:bottom-5 z-50 grid grid-cols-1 md:grid-cols-3 pt-48 xl:pt-10 2xl:pt-32">
         <div className="hidden  pt-0 lg:pt-14 2xl:pt-32  z-10 md:flex justify-center items-center text-xs text-white">
           CASABLANCA BEER © TOUS DROITS RÉSERVÉS
         </div>
@@ -179,7 +179,7 @@ export default function AnimatedTimer() {
         <div className="font-semibold md:hidden z-10 flex justify-center items-center text-[10px] text-white">
           CASABLANCA BEER © TOUS DROITS RÉSERVÉS
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
