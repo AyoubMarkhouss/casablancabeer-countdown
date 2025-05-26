@@ -54,7 +54,7 @@ const items = [
     title: "Mixology",
   },
   {
-    image: "/Fashion3.webp",
+    image: "/Fashion2.webp",
     title: "Fashion",
   },
   {
@@ -62,7 +62,7 @@ const items = [
     title: "Music",
   },
   {
-    image: "/design.jpg",
+    image: "/Fashion3.webp",
     title: "Design",
   },
   {
