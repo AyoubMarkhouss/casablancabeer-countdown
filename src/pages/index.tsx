@@ -44,6 +44,7 @@ export default function Home() {
             src="/LP-Desktop.webp"
             alt="Footer Background"
             fill
+            priority
             className="object-cover -z-10"
           />
           <AnimatedTimer />
