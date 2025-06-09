@@ -103,7 +103,7 @@ export default function Home() {
               s’élèvent dans une vision minimaliste.
             </p>
           </div>
-          <div>
+          <div className="flex justify-end">
             <Image
               src="/png/righthand.webp"
               alt="Casablanca Beer"
