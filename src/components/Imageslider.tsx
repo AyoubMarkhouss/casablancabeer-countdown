@@ -3,9 +3,18 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-const images = ["/Slider1.webp",];
+const images = [
+  "/images/1.webp",
+  "/images/2.webp",
+  "/images/3.webp",
+  "/images/4.webp",
+  "/images/5.webp",
+  "/images/6.webp",
+  "/images/7.webp",
+  "/images/8.webp",
+];
 
-export default function TailwindCarousel() {
+export default function Imageslider() {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [animating, setAnimating] = useState(true);
@@ -67,41 +76,41 @@ export default function TailwindCarousel() {
     >
       {/* Image wrapper */}
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className="flex transition-transform duration-500 ease-in-out  md:h-[700px]"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((src, i) => (
           <div key={i} className="w-full flex-shrink-0">
             <img
-            loading="lazy"
+              loading="lazy"
               src={src}
               alt={`Slide ${i}`}
-              className="w-full h-full md:h-[550px] object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         ))}
       </div>
 
       {/* Prev Button */}
-      {/* <button
+      <button
         onClick={prevSlide}
         className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 z-10 text-[#bb0117] hover:text-white text-4xl font-bold bg-white bg-opacity-20 rounded-full p-2 hover:bg-[#bb0117] transition"
         aria-label="Previous Slide"
       >
         <ChevronLeft className="size-6 md:size-8" />
-      </button> */}
+      </button>
 
       {/* Next Button */}
-      {/* <button
+      <button
         onClick={nextSlide}
         className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 z-10 text-[#bb0117] hover:text-white text-4xl font-bold bg-white bg-opacity-20 rounded-full p-2 hover:bg-[#bb0117] transition"
         aria-label="Next Slide"
       >
         <ChevronRight className="size-6 md:size-8" />
-      </button> */}
+      </button>
 
       {/* Dot Indicators with progress */}
-      {/* <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {images.map((_, i) => (
           <div
             key={i}
@@ -117,10 +126,10 @@ export default function TailwindCarousel() {
             )}
           </div>
         ))}
-      </div> */}
+      </div>
 
       {/* Animation CSS */}
-      {/* <style jsx>{`
+      <style jsx>{`
         @keyframes progress {
           from {
             transform: scaleX(0);
@@ -133,7 +142,7 @@ export default function TailwindCarousel() {
           animation: progress 5s linear forwards;
           transform-origin: left;
         }
-      `}</style> */}
+      `}</style>
     </div>
   );
 }

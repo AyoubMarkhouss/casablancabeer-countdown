@@ -33,6 +33,7 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
         className={cn("h-full w-full object-cover", {
           "blur-[2px]": index !== activeItem,
         })}
+        loading="lazy"
       />
       {index === activeItem && (
         <div className="absolute bottom-4 left-4 min-w-fit  text-white md:bottom-8 md:left-8">
@@ -50,15 +51,15 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
 
 const items = [
   {
-    image: "/mixology.jpg",
+    image: "/mixology.webp",
     title: "Mixology",
   },
   {
-    image: "/Fashion2.webp",
+    image: "/Fashion4.webp",
     title: "Fashion",
   },
   {
-    image: "/Music2.webp",
+    image: "/Music3.webp",
     title: "Music",
   },
   {
@@ -66,7 +67,7 @@ const items = [
     title: "Design",
   },
   {
-    image: "/Poulet.webp",
+    image: "/Poulet3.webp",
     title: "Food",
   },
 ];

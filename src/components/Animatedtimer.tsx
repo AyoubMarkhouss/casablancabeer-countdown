@@ -141,7 +141,7 @@ export default function AnimatedTimer() {
         </div>
         <div className="w-full max-w-5xl text-white z-50 mx-auto flex items-center ">
           <CountdownItem num={timerDays} text="Jours" />
-          <CountdownItem num={timerHours} text="Heurs" />
+          <CountdownItem num={timerHours} text="Heures" />
           <CountdownItem num={timerMinutes} text="Minutes" />
           <CountdownItem num={timerSeconds} text="Secondes" />
         </div>
