@@ -4,14 +4,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const images = [
-  "/images/1.webp",
-  "/images/2.webp",
-  "/images/3.webp",
-  "/images/4.webp",
-  "/images/5.webp",
-  "/images/6.webp",
-  "/images/7.webp",
-  "/images/8.webp",
+  "/images/1-min.webp",
+  "/images/2-min.webp",
+  "/images/3-min.webp",
+  "/images/4-min.webp",
+  "/images/5-min.webp",
+  "/images/6-min.webp",
+  "/images/7-min.webp",
+  "/images/8-min.webp",
 ];
 
 export default function Imageslider() {
