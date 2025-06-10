@@ -8,7 +8,7 @@ const images = [
   "/images/2-min.webp",
   "/images/3-min.webp",
   "/images/4-min.webp",
-  "/images/5-min.webp",
+  "/images/55.webp",
   "/images/6-min.webp",
   "/images/7-min.webp",
   "/images/8-min.webp",
